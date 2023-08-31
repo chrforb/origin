@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+</head>
+<body>
+    <h1>Arithmetic</h1>
+    <ul>
+        <li id="multi">Multiplication: </li>
+        <li id="division">Division: </li>
+        <li id="remainder">Remainder/Modulus: </li>
+        <li id="exponents">Exponents: </li>
+        <li id="increment">Increment: </li>
+        <li id="decrement">Decrement: </li>
+    </ul>
+    <h2>Increment/Decrement Issue</h2>
+    <p id="before">Before: </p>
+    <p id="after">After: </p>
+    <h1>Assignment</h1>
+    <ul>
+        <li id="notSign">Not: </li>
+        <li id="addTo">Add to Value: </li>
+        <li id="subTo">Subtract from Value: </li>
+        <li id="otherT">Other from Value: </li>
+
+    </ul>
+    <h1>Comparison</h1>
+    <ul>
+        <li id="equal">Equal Value: </li>
+        <li id="equalVT">Equal Value and Type: </li>
+        <li id="nEqual">Not Equal Value: </li>
+        <li id="nEqualVT">Not Equal Value and Type: </li>
+        <li id="gThan">Greater Than: </li>
+        <li id="LThanOrEqual">Less Than or Equal To: </li>
+    </ul>
+
+    <script>
+        //base for elements: document.getElementById('').innerHTML += 
+        //Arithmetic
+        let x = 5; y = 12; z = 3;
+        document.getElementById('multi').innerHTML += x * z;
+        document.getElementById('division').innerHTML += y / z;
+        document.getElementById('remainder').innerHTML += x % z;
+        document.getElementById('exponents').innerHTML += x**z;
+        document.getElementById('increment').innerHTML += y++;
+        document.getElementById('decrement').innerHTML += z--;  
+        document.getElementById('before').innerHTML = "Y: " + ++y;
+        document.getElementById('after').innerHTML += "Z: " + --z; 
+        
+        //Assignment
+        document.getElementById('addTo').innerHTML += x+=9; //x=x+9
+        document.getElementById('subTo').innerHTML += y-=10; //y=y-10
+        document.getElementById('otherT').innerHTML += z*=8; //z=z*8
+
+        let snowing = false;
+        document.getElementById('notSign').innerHTML += !snowing;
+
+        //Comparison
+        let a = 8; b = 4; c = "4";
+        document.getElementById('equal').innerHTML += b==c; //4 is the same as '4' as a value
+        document.getElementById('equalVT').innerHTML += b===c; //b is an int and c is str
+        document.getElementById('nEqual').innerHTML += b!=c;
+        document.getElementById('nEqualVT').innerHTML += b!==c; 
+        document.getElementById('gThan').innerHTML += a > b;
+        document.getElementById('LThanOrEqual').innerHTML += b <= a; 
+
+
+
+
+
+    </script>
+</body>
+</html>

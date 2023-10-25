@@ -25,7 +25,7 @@ function noPowerCat() {
         alert("In turn, he steals your powers and you are no longer a wizard.");
         alert("You are now back to being regular, and decide to go home since your adventure is now over.");
     } else if (noCatDuel.toUpperCase() == "CAT") {
-        alert("You asked the <i>cat</i> for help?");
+        alert("You asked the cat for help?");
         alert("Wait! He seems to understand you and steps up to defend you!");
         alert("Apparently, your cat has psychic powers. He lifts the wizard up and launches him away!");
         alert("No wonder the wizards liked him! He saves you and now you can go home. Your adventure is over.");

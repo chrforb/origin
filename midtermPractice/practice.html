@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="str" id="str"/>
+    <button onclick=getStr()>Submit Text</button>
+    <p id="strAnswer"></p>
+    <script>
+        function getStr() {
+            let myStr = document.getElementById(`str`).value;
+            let strLen = myStr.length;
+            let rand = Math.floor(Math.random()*strLen)+1;
+            let rChar = myStr.charAt(rand);
+            let half = strLen/2;
+            let strText;
+
+            if(rand>half) {
+                strText = `This letter is in the second half of your string: ` + rChar;
+            } else if (rand == half) {
+                strText = `Your letter is right in the middle: ` + rChar;
+            } else {
+                strText = `Your letter is in the first half of the string: ` + rChar;
+            }
+            document.getElementById(`strAnswer`).innerHTML = strText;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        input+p{
+            display:inline;
+            margin-left:1em;
+            color:red;
+        }
+
+        label {
+            display:inline-block;
+            width:50px;
+            margin: 0 0.5em 0.5em 0;
+            text-align:right;
+        }
+
+        div {
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>Name:</label>
+        <input type="text" name="myName" id="myName"/>
+        <p id="nameError"></p><br/>
+        <label>Address:</label>
+        <input type="text" name="address" id="address" />
+        <p id="addError"></p><br/>
+        <label>City:</label>
+        <input type="text" name="city" id="city"/>
+        <p id="cityError"></p><br/>
+        <label>Zip:</label>
+        <input type="text" name="zip" id="zip"/>
+        <p id="zipError"></p><br/>
+        <label>Phone:</label>
+        <input type="text" name="phone" id="phone"/>
+        <p id="phoneError"></p><br/>
+        <label>Email:</label>
+        <input type="text" name="myEmail" id="myEmail"/>
+        <p id="emailError"></p><br/>
+        <input type="submit" value="Submit Form" id="submitBtn"/>
+    </form>
+    <div>
+        <h1>Thank You for Registering with us!</h1>
+        <p>The following information has been submitted:</p>
+        <ul>
+            <li>Name: </li>
+            <li>Address: </li>
+            <li>City: </li>
+            <li>Zip: </li>
+            <li>Phone: </li>
+            <li>Email: </li>
+        </ul>
+    </div>
+<script src="forms.js"></script>
+</body>
+</html>

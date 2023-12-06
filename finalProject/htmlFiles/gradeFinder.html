@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Finder</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-bottom: 20px;
+            justify-content: center;
+            }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            }
+
+        th {
+            background-color: #f2f2f2;
+            }
+
+        input {
+            padding: 5px;
+            margin-right: 10px;
+            }
+
+        button {
+            padding: 5px;
+            cursor: pointer;
+            }
+
+    </style>
+</head>
+<body>
+    <label for="points">Enter point total</label>
+    <input type="number" id="points" placeholder="max 500">
+    <button onclick="calculateGrade()">Your Grade</button>
+    <p id="result"></p> 
+    <table id="gradingTable">
+        <thead>
+            <tr>
+                <th>Grade</th>
+                <th>Range</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="a">
+                <td>A</td>
+                <td>90-100</td>
+            </tr>
+            <tr id="b">
+                <td>B</td>
+                <td>80-89</td>
+            </tr>
+            <tr id="c">
+                <td>C</td>
+                <td>70-79</td>
+            </tr>
+            <tr id="d">
+                <td>D</td>
+                <td>60-69</td>
+            </tr>
+            <tr id="f">
+                <td>F</td>
+                <td>59-lower</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="../jsFiles/grade.js"></script>
+</body>
+</html>

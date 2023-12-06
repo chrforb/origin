@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form id="registration">
+        <div id="account">
+            <h2>Account Information</h2>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <p id="emailError"></p><br/>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <p id="passwordError"></p><br/>
+
+            <label for="verify">Verify Password:</label>
+            <input type="password" id="verifyPassword" name="verifyPassword">
+            <p id="verifyPasswordError"></p><br/>
+        </div>
+
+        <div id="contact">
+            <h2>Contact Information</h2>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+            <br/>
+        
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+            <br/>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+            <br/>
+        
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+            <br/>
+        
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state">
+            <p id="stateError"></p><br/>
+        
+            <label for="zip">Zip:</label>
+            <input type="text" id="zip" name="zip">
+            <p id="zipError"></p><br/>
+        
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone">
+            <p id="phoneError"></p><br/>
+        </div>
+
+        <div id="payment">
+            <h2>Payment</h2>
+            <label for="cardType">Card Type:</label>
+            <select id="cardType" name="cardType">
+                <option value="credit">Credit</option>
+                <option value="debit">Debit</option>
+            </select>
+        <br/>
+
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber">
+            <p id="cardError"></p><br/>
+
+            <label for="expiration">Expiration Date:</label>
+            <input type="text" id="expiration" name="expiration">
+            <p id="expError"></p><br/>
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+    <script src="../jsFiles/form.js"></script>
+</body>
+</html>

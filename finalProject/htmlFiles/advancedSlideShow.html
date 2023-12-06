@@ -3,10 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Advanced Slideshow</title>
+    <style>
+        #slides {
+            display: flex;
+            justify-content: center;
+            max-width: 350px;
+            margin: auto;
+        }
+
+        .slide {
+            width: 100%;
+        }
+
+        #controls {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #controlBtn {
+            cursor: pointer;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="controls">
+        <button onclick="prevSlide()">Previous</button>
+        <span id="controlBtn" onclick="playOrPause()">Play</span>
+        <button onclick="nextSlide()">Next</button>
+        <label for="timing">Timing:</label>
+        <select id="timing" onchange="changeTime()">
+          <option value="2000">2 seconds</option>
+          <option value="4000">4 seconds</option>
+          <option value="6000">6 seconds</option>
+        </select>
+      </div>
+    <div id="slides">
+        <img class="slide">
+        <img class="slide">
+        <img class="slide">
+        <img class="slide">
+        <img class="slide">
+        <img class="slide">
+        <img class="slide">
+        <img class="slide">
+        <img class="slide">
+        <img class="slide">
+    </div>
     <script src="../jsFiles/slides.js"></script>
 </body>
 </html>
